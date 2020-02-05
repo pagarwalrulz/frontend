@@ -28,7 +28,7 @@ class UserRegistration extends Component {
         a_middleName: this.state.a_middleName,
         a_lastName: this.state.a_lastName};
 
-    fetch('http://localhost:4000/fullStackApp/add', {
+    fetch('http://18.217.22.8:4000/fullStackApp/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'},

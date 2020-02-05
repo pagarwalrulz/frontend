@@ -28,7 +28,7 @@ class EditPage extends Component {
         a_middleName: this.state.a_middleName,
         a_lastName: this.state.a_lastName};
 
-    fetch('http://localhost:4000/fullStackApp/update/' + this.props.match.params.id, {
+    fetch('http://18.217.22.8:4000/fullStackApp/update/' + this.props.match.params.id, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'},
@@ -48,7 +48,7 @@ class EditPage extends Component {
 
   componentDidMount() {
     // calling the method to read the user details
-    fetch('http://localhost:4000/fullStackApp/' + this.props.match.params.id, {
+    fetch('http://18.217.22.8:4000/fullStackApp/' + this.props.match.params.id, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',

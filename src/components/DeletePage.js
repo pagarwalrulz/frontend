@@ -10,7 +10,7 @@ class DeletePage extends Component {
   onSubmit(event) {
     event.preventDefault();
 
-    fetch('http://localhost:4000/fullStackApp/delete/' + this.props.match.params.id, {
+    fetch('http://18.217.22.8:4000/fullStackApp/delete/' + this.props.match.params.id, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'}
